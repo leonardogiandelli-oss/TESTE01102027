@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inclusão Escolar: Alunos Estrangeiros no Brasil</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fonte Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Cabeçalho / Navegação -->
+    <header class="header">
+        <div class="container nav-container">
+            <h1 class="logo">Educação<span>SemFronteiras</span></h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#desafios">Desafios</a></li>
+                    <li><a href="#solucoes">Boas Práticas</a></li>
+                    <li><a href="#depoimentos">Relatos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Hero (Início) -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <h2>Acolher para Ensinar: Desafios dos Alunos Estrangeiros no Brasil</h2>
+            <p>Milhares de crianças e jovens migrantes e refugiados enfrentam barreiras linguísticas e culturais nas escolas brasileiras. Como podemos garantir uma inclusão real?</p>
+            <a href="#desafios" class="btn">Saiba Mais</a>
+        </div>
+    </section>
+
+    <!-- Principais Desafios -->
+    <section id="desafios" class="section">
+        <div class="container">
+            <h2 class="section-title">Os Principais Desafios</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">🗣️</div>
+                    <h3>Barreira Linguística</h3>
+                    <p>O Português como Segunda Língua (PL2) raramente é oferecido de forma estruturada nas redes públicas, dificultando a alfabetização e o acompanhamento das aulas.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌍</div>
+                    <h3>Adaptação Cultural</h3>
+                    <p>Diferenças nos costumes, no calendário escolar e nas metodologias de ensino podem gerar isolamento social e dificuldades de integração.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📑</div>
+                    <h3>Burocracia e Documentação</h3>
+                    <p>Falta de histórico escolar traduzido ou documentação completa muitas vezes gera atrasos na equivalência de série e na distribuição de turmas adequadas.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💔</div>
+                    <h3>Preconceito e Xenofobia</h3>
+                    <p>Estudantes estrangeiros por vezes enfrentam situações de bullying ou discriminação, o que impacta diretamente a saúde mental e o aprendizado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soluções e Boas Práticas -->
+    <section id="solucoes" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Caminhos para a Solução</h2>
+            <div class="solutions-list">
+                <div class="solution-item">
+                    <h4>1. Português como Língua de Acolhimento (PLAc)</h4>
+                    <p>Criação de módulos específicos para ensino intensivo do idioma português focado no contexto do dia a dia escolar.</p>
+                </div>
+                <div class="solution-item">
+                    <h4>2. Formação Continuada para Professores</h4>
+                    <p>Capacitação do corpo docente para adotar metodologias pluriculturais e avaliação adaptada aos níveis de proficiência.</p>
+                </div>
+                <div class="solution-item">
+                    <h4>3. Materiais Bilingues e Visuais</h4>
+                    <p>Uso de recursos visuais, sinalização escolar multilíngue e dicionários ilustrados para facilitar o entendimento dos conteúdos.</p>
+                </div>
+                <div class="solution-item">
+                    <h4>4. Tutoria entre Pares (Estudantes Padrinhos)</h4>
+                    <p>Conectar alunos brasileiros e estrangeiros para promover a integração socioemocional e o apoio mútuo nas tarefas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos e Relatos (Com filtro interativo por JS) -->
+    <section id="depoimentos" class="section">
+        <div class="container">
+            <h2 class="section-title">Vozes da Escolas</h2>
+            <div class="interactive-quote">
+                <blockquote id="quote-text">
+                    "No começo eu não entendia nada do que o professor falava. Fiquei muito calado por meses até conseguir fazer meu primeiro amigo."
+                </blockquote>
+                <p id="quote-author">— Mateo, 12 anos (Venezuella)</p>
+                <button id="next-quote-btn" class="btn-secondary">Ver outro relato</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Apoio / Contato -->
+    <section id="contato" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Faça Parte da Mudança</h2>
+            <p class="section-subtitle">Você é educador, voluntário ou precisa de apoio na sua escola? Fale conosco!</p>
+            
+            <form id="contact-form" class="form">
+                <div class="form-group">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" id="name" required placeholder="Seu nome">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" required placeholder="seu.email@exemplo.com">
+                </div>
+                <div class="form-group">
+                    <label for="role">Você é:</label>
+                    <select id="role" required>
+                        <option value="">Selecione...</option>
+                        <option value="professor">Professor(a) / Educador(a)</option>
+                        <option value="aluno">Aluno(a) Estrangeiro(a)</option>
+                        <option value="responsavel">Pai/Mãe ou Responsável</option>
+                        <option value="voluntario">Voluntário(a) / ONG</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem / Relato</label>
+                    <textarea id="message" rows="5" required placeholder="Como podemos ajudar ou qual sua experiência?"></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar Mensagem</button>
+                <div id="form-feedback" class="feedback-message"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Projeto Educação Sem Fronteiras. Projeto focado na inclusão de migrantes e refugiados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
